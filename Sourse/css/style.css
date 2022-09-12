@@ -65,6 +65,28 @@ body._lock {
     opacity: 0.8;
     transition: 0.5s;
 }
+.header-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+.header-block__title {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: calc(42 / 35 * 100%);
+    position: relative;
+    margin-right: 10px;
+}
+.header-block__title::after {
+    content: "";
+    position: absolute;
+    width: 253px;
+    height: 3px;
+    background-color: #006DFE;
+    left: 0;
+    bottom: -7px;
+}
 /*----------WRAPPER--------*/
 .wrapper {
     min-height: 100%;
@@ -231,29 +253,11 @@ body._lock {
     line-height: calc(24 / 16 * 100%);
 }
 /*----------PLACES--------*/
-.places__container {
+.catalog__container {
     padding: 65px 0px;
 }
-.places__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.catalog__header {
     margin-bottom: 46px;
-}
-.places__title {
-    font-weight: 500;
-    font-size: 35px;
-    line-height: calc(42 / 35 * 100%);
-    position: relative;
-}
-.places__title:after {
-    content: "";
-    position: absolute;
-    width: 253px;
-    height: 3px;
-    background-color: #006DFE;
-    left: 0;
-    bottom: -7px;
 }
 .catalog-places__top {
     display: flex;
@@ -282,7 +286,7 @@ body._lock {
     flex: 0 1 33.333%;
     padding: 0px 5px;
 }
-.catalog-places__image  img {
+.catalog-places__image img {
     display: block;
     margin: 0 auto;
 }
@@ -290,43 +294,42 @@ body._lock {
     max-width: 100%;
     min-height: 100%;
     object-fit: cover;
+    object-position: 0% 100%;
 }
 /*----------ABOUT-PLACES--------*/
 .about-places__body {
-    padding: 65px 0px;
+    padding: 65px 0;
 }
-.about-places__item {
+.about-places__item:not(:last-child) {
+    margin-bottom: 77px;
 }
 .item-about {
     display: flex;
-    align-items: center;
     gap: 20px 105px;
-}
-.item-about__image {
+    align-items: center;
 }
 .item-about__content {
     display: flex;
     flex-direction: column;
+    row-gap: 69px;
 }
 .item-about__title {
     font-weight: 500;
     font-size: 30px;
     line-height: calc(40 / 30 * 100%);
 }
-.item-about__title:not(:last-child) {
-    margin-bottom: 85px;
-}
 .item-about__text {
     line-height: calc(24 / 16 * 100%);
+    max-width: 520px;
 }
-.item-about__link:last-child {
-    margin-top: 58px;
+.item-about__image img {
+    max-width: 100%;
+    flex: 0 0 47.23%;
 }
 /*----------FOOTER--------*/
 .footer {
     background-color: #0E1D28;
     min-height: 370px;
-    margin-top: 50px;
 }
 .footer__container {
     max-width: 1110px;
