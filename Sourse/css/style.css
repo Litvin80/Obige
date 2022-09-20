@@ -61,7 +61,7 @@ body._lock {
 .link:hover {
     text-decoration: underline;
 }
-._hover-img:hover {
+._hover:hover {
     opacity: 0.8;
     transition: 0.5s;
 }
@@ -137,6 +137,9 @@ body._lock {
 .page__places {
 }
 .page__about-places {
+}
+.page__places {
+    padding: 65px 0px;
 }
 /*----------MAIN-BLOCK--------*/
 .main-block {
@@ -252,7 +255,7 @@ body._lock {
 .item-benefits__text {
     line-height: calc(24 / 16 * 100%);
 }
-/*----------PLACES--------*/
+/*----------CATALOG--------*/
 .catalog__container {
     padding: 65px 0px;
 }
@@ -325,6 +328,72 @@ body._lock {
 .item-about__image img {
     max-width: 100%;
     flex: 0 0 47.23%;
+}
+/*----------PLACES--------*/
+.catalog__header {
+}
+.header-block {
+}
+.header-block__title {
+}
+.places__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin:  0px calc(106 / 6 px);
+}
+.places__column {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 33.333%;
+    padding: 0px 17.5px;
+}
+.column-places {
+}
+.column-places__post {
+}
+.column-places__content {
+}
+.post-place__image {
+    min-width: 100%;
+}
+.post-place__like-status {
+    padding-right: 20px;
+}
+.post-place__info span {
+    font-weight: 500;
+    line-height: calc(24 / 18 *  100%);
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.post-place__text {
+    margin: 0px 157px 0px 25px;
+}
+.post-place__info {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 55px;
+    align-items: center;
+    background-color: #15182499;
+    max-width: 100%;
+    margin-top: -55px;
+}
+.post-place__image {
+    position: relative;
+}
+.column-places__text {
+    line-height: calc(24 / 16 * 100%);
+    margin-top: 45px;
+}
+.column-places__text:not(:last-child) {
+    margin-bottom: 50px;
+}
+.column-places__button {
+    color: inherit;
+    color: #FFFFFF;
+    line-height: calc(20 / 16 * 100%);
+    background-color: #006DFE;
+    padding: 12px 19px;
 }
 /*----------FOOTER--------*/
 .footer {
