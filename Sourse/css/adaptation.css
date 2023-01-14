@@ -190,12 +190,16 @@
         margin-bottom: 10px;
     }
 }
-/*----------PLACES--------*/
-@media (max-width: 992px) {
-    .places__container {
-        padding: 30px 0px;
+/*----------------------*/
+@media (max-width: 767.98px) {
+    .header-block {
+        flex-wrap: wrap;
+    }
+    .header-block__link {
+        margin-top: 20px;
     }
 }
+/*----------CATALOG-PLACES--------*/
 @media (max-width: 840px) {
     .catalog-places__bottom .catalog-places__image {
         flex: 0 0 50%;
@@ -219,17 +223,6 @@
     }
     .catalog-places__bottom .catalog-places__image:last-child img {
         max-height: 350px;
-    }
-    .places__container {
-        padding: 20px 0px;
-    }
-    .places__title {
-        font-size: 30px;
-    }
-    .places__header {
-        flex-wrap: wrap;
-        row-gap: 20px;
-        margin-bottom: 20px;
     }
     .catalog-places__image img {
         min-width: 100%;
@@ -286,5 +279,72 @@
 @media (max-width: 690px) {
     .item-about__image img {
         max-height: auto;
+    }
+}
+/*----------PLACES--------*/
+@media (max-width: 1200px) {
+    .places__items {
+        margin: 0px -15px;
+    }
+    .places__item {
+        padding: 0px 15px;
+    }
+}
+@media (max-width: 992px) {
+    .places__item {
+        flex: 0 1 50%;
+    }
+    .page__places {
+        padding: 30px 0px;
+    }
+    .places__items {
+        row-gap: 30px;
+    }
+}
+@media (max-width: 767.98px) {
+    .places__item {
+        flex: 0 1 100%;
+    }
+    .item-places__image:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    .content-item-places__text:not(:last-child) {
+        margin-bottom:  25px;
+    }
+    .infotmation-status-places >* {
+        font-size: 18px
+    }
+    .status-image-places__label {
+        font-size: 20px;
+    }
+}
+/*----------FOOTER--------*/
+@media (min-width: 992px) {
+    .footer__container {
+        justify-content: space-between;
+        min-height: 370px;
+    }
+}
+@media (max-width: 992px) {
+    .footer__container {
+        flex-direction: column-reverse;
+        row-gap: 50px;
+    }
+}
+@media (max-width: 767.98px) {
+    .footer__columns {
+        justify-content: space-between;
+        min-width: 100%;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+    .column-footer__label {
+        font-size: 20px;
+    }
+    .menu-column-footer__link {
+        font-size: 18px;
+    }
+    .footer__container {
+        row-gap: 30px;
     }
 }
